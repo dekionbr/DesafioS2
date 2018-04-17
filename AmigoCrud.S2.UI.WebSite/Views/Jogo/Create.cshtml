@@ -1,0 +1,50 @@
+@model AmigoCrud.S2.Application.ViewModels.JogoViewModel
+@{
+    ViewData["Title"] = "Incluir novo Jogo";
+}
+<h2>@ViewData["Title"]</h2>
+<form asp-action="Create">
+    <div class="form-horizontal">
+        <hr />
+        <vc:summary />
+        <div class="form-group">
+            <label asp-for="Nome" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Descricao" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+        </div>
+        @if (Model.Amigos.Count() > 0)
+        {
+            <div class="form-group">
+                <label asp-for="AmigoId" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <select asp-for="AmigoId" class="form-control"
+                            asp-items="@(new SelectList(Model.Amigos, "Id", "Nome"))">
+                        <option>Selecione</option>
+                    </select>
+                    <span asp-validation-for="AmigoId" class="text-danger"></span>
+                </div>
+            </div>
+        }
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info">Voltar</a>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

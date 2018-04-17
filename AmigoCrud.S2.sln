@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{78E50F31-6C74-465F-9B58-EE82A6652C9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{64DFD6FE-3865-4EBB-9E31-1D36897417B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{92B72667-E5E4-4019-81F1-AB154CFF7F08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{489548C5-DF28-47A7-A42D-6552D4206D9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{7C1E189E-33FB-45F2-8BA8-DE7181820D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmigoCrud.S2.Application", "AmigoCrud.S2.Application\AmigoCrud.S2.Application.csproj", "{65B6E035-6C7A-4FA9-82BC-B52A7254A2F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmigoCrud.S2.Domain", "AmigoCrud.S2.Domain\AmigoCrud.S2.Domain.csproj", "{79E3029C-5963-498C-966D-46AEF6D7A24F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmigoCrud.S2.Infra.Data", "AmigoCrud.S2.Infra.Data\AmigoCrud.S2.Infra.Data.csproj", "{3773933A-B644-47A6-A0EF-D8CCAEE99530}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AmigoCrud.S2.UI.WebSite", "AmigoCrud.S2.UI.WebSite\AmigoCrud.S2.UI.WebSite.csproj", "{511E10C1-6222-4F78-81E6-952116F9440C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{A0BC0D6C-2F9F-42EE-9852-25BE010480FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmigoCrud.S2.Infra.CrossCutting.Bus", "AmigoCrud.S2.Infra.CrossCutting.Bus\AmigoCrud.S2.Infra.CrossCutting.Bus.csproj", "{4C773214-6008-4734-9679-4A3B3F2306DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmigoCrud.S2.Infra.CrossCutting.Identity", "AmigoCrud.S2.Infra.CrossCutting.Identity\AmigoCrud.S2.Infra.CrossCutting.Identity.csproj", "{87C35B4D-EB8F-4ECD-90C8-E64389B74939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmigoCrud.S2.Infra.CrossCutting.IoC", "AmigoCrud.S2.Infra.CrossCutting.IoC\AmigoCrud.S2.Infra.CrossCutting.IoC.csproj", "{DFC03091-B1D5-4532-85AC-42A94191A338}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65B6E035-6C7A-4FA9-82BC-B52A7254A2F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65B6E035-6C7A-4FA9-82BC-B52A7254A2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65B6E035-6C7A-4FA9-82BC-B52A7254A2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65B6E035-6C7A-4FA9-82BC-B52A7254A2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79E3029C-5963-498C-966D-46AEF6D7A24F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E3029C-5963-498C-966D-46AEF6D7A24F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E3029C-5963-498C-966D-46AEF6D7A24F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E3029C-5963-498C-966D-46AEF6D7A24F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3773933A-B644-47A6-A0EF-D8CCAEE99530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3773933A-B644-47A6-A0EF-D8CCAEE99530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3773933A-B644-47A6-A0EF-D8CCAEE99530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3773933A-B644-47A6-A0EF-D8CCAEE99530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{511E10C1-6222-4F78-81E6-952116F9440C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{511E10C1-6222-4F78-81E6-952116F9440C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{511E10C1-6222-4F78-81E6-952116F9440C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{511E10C1-6222-4F78-81E6-952116F9440C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C773214-6008-4734-9679-4A3B3F2306DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C773214-6008-4734-9679-4A3B3F2306DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C773214-6008-4734-9679-4A3B3F2306DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C773214-6008-4734-9679-4A3B3F2306DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C35B4D-EB8F-4ECD-90C8-E64389B74939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C35B4D-EB8F-4ECD-90C8-E64389B74939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C35B4D-EB8F-4ECD-90C8-E64389B74939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C35B4D-EB8F-4ECD-90C8-E64389B74939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFC03091-B1D5-4532-85AC-42A94191A338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC03091-B1D5-4532-85AC-42A94191A338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC03091-B1D5-4532-85AC-42A94191A338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC03091-B1D5-4532-85AC-42A94191A338}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C1E189E-33FB-45F2-8BA8-DE7181820D4A} = {92B72667-E5E4-4019-81F1-AB154CFF7F08}
+		{65B6E035-6C7A-4FA9-82BC-B52A7254A2F3} = {64DFD6FE-3865-4EBB-9E31-1D36897417B6}
+		{79E3029C-5963-498C-966D-46AEF6D7A24F} = {78E50F31-6C74-465F-9B58-EE82A6652C9E}
+		{3773933A-B644-47A6-A0EF-D8CCAEE99530} = {7C1E189E-33FB-45F2-8BA8-DE7181820D4A}
+		{511E10C1-6222-4F78-81E6-952116F9440C} = {489548C5-DF28-47A7-A42D-6552D4206D9A}
+		{A0BC0D6C-2F9F-42EE-9852-25BE010480FF} = {92B72667-E5E4-4019-81F1-AB154CFF7F08}
+		{4C773214-6008-4734-9679-4A3B3F2306DF} = {A0BC0D6C-2F9F-42EE-9852-25BE010480FF}
+		{87C35B4D-EB8F-4ECD-90C8-E64389B74939} = {A0BC0D6C-2F9F-42EE-9852-25BE010480FF}
+		{DFC03091-B1D5-4532-85AC-42A94191A338} = {A0BC0D6C-2F9F-42EE-9852-25BE010480FF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D99F4C21-6A17-4612-93EF-36DA97EE557A}
+	EndGlobalSection
+EndGlobal
